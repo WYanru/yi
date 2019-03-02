@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+	         window.onload = function(){
+	         /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+	                           为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+	         getRem(720,100)
+	         };
+	         window.onresize = function(){
+	         getRem(720,100)
+	         };
+	         function getRem(pwidth,prem){
+	           var html = document.getElementsByTagName("html")[0];
+	           var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+	            html.style.fontSize = oWidth/pwidth*prem + "px";
+			}
+        </script>
+	</head>
+	<body>
+		<nav>
+			<span class="iconfont icon-hang"></span>
+			<h1>我的</h1>
+		</nav>
+		<section>
+			<ul id="cartList">
+				
+			</ul>
+			
+		</section>
+		<footer>
+			<figure>
+				<span class="iconfont icon-index"></span>
+				<figcaption class="shouye">首页</figcaption>
+			</figure>
+			<figure>
+				<span class="iconfont icon-gouwuche"></span>
+				<figcaption class="gouwu">购物</figcaption>
+			</figure>
+			<figure>
+				<span class="iconfont icon-wodedangxuan"></span>
+				<figcaption class="ren">人</figcaption>
+			</figure>
+		</footer>
+	</body>
+</html>

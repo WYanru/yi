@@ -1,0 +1,15 @@
+.main_1 .user,.pas,.emai{
+	font-size: 0.5rem;	
+}
+#text,#psd,#ema{
+	width: 3rem;
+	height: 0.6rem;
+}
+#btn{
+	width: 100%;
+	height: 1rem;
+}
+.r-user,.r-user1,.r-email,.r-email2{
+	font-size: 0.3rem;
+	color: #f00;
+}
